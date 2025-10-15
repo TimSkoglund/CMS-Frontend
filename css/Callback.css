@@ -1,0 +1,163 @@
+
+#call-back {
+  position: relative;
+  background-color: #ffffff; /* Hela sektionen vit */
+  padding: 8rem 0 6rem;
+  overflow: visible; /* Låter formuläret sticka upp i hero */
+}
+
+#call-back .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  gap: 3rem;
+}
+
+/* ---------------------------------------------------------
+   Vänster kolumn – textdel (3/5)
+   --------------------------------------------------------- */
+.callback-content {
+  flex: 3;
+  margin-left: 2rem;
+  color: var(--color-main);
+}
+
+.callback-content a {
+  color: var(--color-main);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.callback-content h2 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  font-weight: 700;
+}
+
+.callback-content p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.callback-content img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 1.5rem 0;
+  display: block;
+}
+
+/* ---------------------------------------------------------
+   Höger kolumn – formulär (2/5)
+   --------------------------------------------------------- */
+.callback-form-wrapper {
+    z-index: 10;
+  flex: 2;
+  position: relative;
+  top: -260px; /* flyttar upp formulär */
+}
+
+.contact-form {
+  background-color: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 0; /* Fyrkantiga hörn */
+  overflow: hidden; /* För att headern sitter ihop med resten */
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------------------------------------------------------
+   Formulärhuvud – mörk bakgrund med ljus text
+   --------------------------------------------------------- */
+.form-header {
+  background-color: var(--color-main);
+  color: #ffffff;
+  padding: 2rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Subtil shadow istället för border */
+}
+
+.form-header h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-header p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* ---------------------------------------------------------
+   Formulärkroppen – fält & knapp
+   --------------------------------------------------------- */
+.form-body {
+  padding: 2rem;
+}
+
+.form-body label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-body input,
+.form-body select,
+.form-body textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 0; /* Fyrkantiga fält */
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.form-body input:focus,
+.form-body select:focus,
+.form-body textarea:focus {
+  border-color: var(--color-main);
+  outline: none;
+  box-shadow: 0 0 4px rgba(79, 89, 85, 0.3);
+}
+
+/* Knapp */
+.form-body button {
+  background-color: #f7f7f7; /* Ljus bakgrund */
+  color: var(--color-main);  /* Mörk text */
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0; /* Fyrkantig */
+  transition: background-color 0.3s ease;
+}
+
+.form-body button:hover {
+  background-color: #e3e3e3; /* Lite mörkare vid hover */
+}
+
+/* ---------------------------------------------------------
+   Responsiv anpassning
+   --------------------------------------------------------- */
+@media (max-width: 900px) {
+  #call-back .container {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .callback-content {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .callback-form-wrapper {
+    top: 0;
+    width: 100%;
+    max-width: 500px;
+    margin: 2rem auto 0;
+  }
+  
+}

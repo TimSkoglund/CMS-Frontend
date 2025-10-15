@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/Styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>Onatrix</title>
+</head>
+<body>
+    <div class="wrapper">
+       <header">
+            <div class="header-top">
+                <div class="container">
+                <p>Klarabergsviadukten 90, 111 64 Stockholm</p>
+                <div class="header-top-right">
+                    <a href="">
+                        <img src="/images/SocialMedia/Icon facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="">
+                        <img src="/images/SocialMedia/Icon twitter.svg" alt="Twitter">
+                    </a>
+                    <a href="">
+                        <img src="/images/SocialMedia/Icon pinterest.svg" alt="Linkedin">
+                    </a>
+                </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="container">
+                <img src="/images/Brand.svg" alt="Sök" class="brand-img" /> 
+
+                <nav class="main-nav">
+                    <a href="">About</a>
+                    <a href="">Services</a>
+                    <a href="">Projects</a>
+                    <a href="">Contact</a>
+                </nav>
+                <div class="search-container">
+                    <img src="/images/search.svg" alt="Sök" class="search-icon" />
+                    <input type="text" placeholder="Sök..." class="search-input" />
+                </div>
+                </div>
+            </div>
+        </header>
+        <main>
+<section id="hero">
+  <img src="/images/Hero.svg" alt="Hero-bild" class="hero-image">
+<div class="container">
+  <div class="hero-content">
+    <h1>We bring <span>success to you</span></h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <button class="hero-button">Contact us</button>
+  </div>
+  </div>
+</section>
+<section id="call-back">
+  <div class="container">
+    <!-- Vänster sida: textinnehåll -->
+    <div class="callback-content">
+      <a href="#">ABOUT US</a>
+      <h2>We have 40 years experience</h2>
+      <p>“We have over 25 years of experience providing expert financial advice to both businesses and individuals.”</p>
+      <p>Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+      <img src="/images/example.jpg" alt="Team photo">
+      <p>asdasd</p>
+    </div>
+
+    <!-- Höger sida: formulär -->
+    <div class="callback-form-wrapper">
+      <form action="/submit-form" method="POST" class="contact-form">
+        <div class="form-header">
+          <h2>Request a call back</h2>
+          <p>Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat.</p>
+        </div>
+
+        <div class="form-body">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Skriv ditt namn" required>
+
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="namn@exempel.se" required>
+
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="Telefonnummer" required>
+
+          <label for="consulting">Consulting Service</label>
+          <select id="consulting" name="consulting" required>
+            <option value="" disabled selected>Financial Consulting</option>
+            <option value="business">Business Planning</option>
+            <option value="investment">Investment Advice</option>
+            <option value="risk">Risk Management</option>
+          </select>
+
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+        </main>
+    </div>
+</body>
+</html>

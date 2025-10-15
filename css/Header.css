@@ -1,0 +1,132 @@
+/* Grundinställning */
+body {
+  margin: 0;
+}
+
+
+/* Header */
+
+
+/* Rad 1 – mörk bakgrund */
+.header-top {
+  background-color: #4F5955; /* går hela vägen ut */
+  color: #ffffff;
+    font-weight: 200;
+  font-size: 13px;
+  z-index: 10; 
+}
+
+.header-top .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem;
+}
+.header-top-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;                /* jämnt mellanrum mellan ikonerna */
+}
+
+.header-top-right a {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 6px;           /* lite sidomarginal så att klickytan känns bättre */
+}
+
+/* Vertikal divider mellan ikoner (ej efter sista) */
+.header-top-right a:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -7px;              /* justerar mellanrummet mellan ikon & streck */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 3rem;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.4); /* diskret, passar mörk bakgrund */
+}
+
+/* Ikonernas utseende */
+.header-top-right img {
+  width: 13px;
+  height: 13px;
+  display: block;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  opacity: 0.85;
+}
+
+/* Hover-effekt för snyggare interaktion */
+.header-top-right a:hover img {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+
+/* Rad 2 – ljus bakgrund */
+.header-bottom {
+  background-color: #ffffff;
+  border-bottom: none;
+  position: relative;
+  z-index: 10;
+  /* mjuk, naturlig skugga */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.header-bottom .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0rem;
+  z-index: 10; 
+}
+
+.brand-img {
+    width: 144px;   /* sätter bredden */
+    height: auto;   /* behåller proportionerna */
+}
+
+/* Navigation */
+.main-nav a {
+  margin: 0 2rem;
+  text-decoration: none;
+  color: var(--color-main);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.main-nav a:hover {
+  color: #0078d7;
+}
+
+/* Sökfält */
+.search-container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.search-input {
+  position: absolute;
+  left: 35px;
+  width: 0;
+  opacity: 0;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.search-container:hover .search-input {
+  width: 160px;
+  opacity: 1;
+}
