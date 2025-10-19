@@ -1,17 +1,11 @@
-/* Grundinställning */
 body {
   margin: 0;
 }
 
-
-/* Header */
-
-
-/* Rad 1 – mörk bakgrund */
 .header-top {
-  background-color: #4F5955; /* går hela vägen ut */
+  background-color: #4F5955;
   color: #ffffff;
-    font-weight: 200;
+  font-weight: 200;
   font-size: 13px;
   z-index: 10; 
 }
@@ -25,21 +19,20 @@ body {
 .header-top-right {
   display: flex;
   align-items: center;
-  gap: 14px;                /* jämnt mellanrum mellan ikonerna */
+  gap: 14px; 
 }
 
 .header-top-right a {
   display: flex;
   align-items: center;
   position: relative;
-  padding: 0 6px;           /* lite sidomarginal så att klickytan känns bättre */
+  padding: 0 6px;
 }
 
-/* Vertikal divider mellan ikoner (ej efter sista) */
 .header-top-right a:not(:last-child)::after {
   content: "";
   position: absolute;
-  right: -7px;              /* justerar mellanrummet mellan ikon & streck */
+  right: -7px; 
   top: 50%;
   transform: translateY(-50%);
   width: 1px;
@@ -48,7 +41,6 @@ body {
   background-color: rgba(255, 255, 255, 0.4); /* diskret, passar mörk bakgrund */
 }
 
-/* Ikonernas utseende */
 .header-top-right img {
   width: 13px;
   height: 13px;
@@ -57,14 +49,11 @@ body {
   opacity: 0.85;
 }
 
-/* Hover-effekt för snyggare interaktion */
 .header-top-right a:hover img {
   transform: scale(1.1);
   opacity: 1;
 }
 
-
-/* Rad 2 – ljus bakgrund */
 .header-bottom {
   background-color: #ffffff;
   border-bottom: none;
@@ -83,11 +72,10 @@ body {
 }
 
 .brand-img {
-    width: 144px;   /* sätter bredden */
-    height: auto;   /* behåller proportionerna */
+    width: 144px;
+    height: auto;
 }
 
-/* Navigation */
 .main-nav a {
   margin: 0 2rem;
   text-decoration: none;
